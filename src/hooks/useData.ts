@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState } from 'react';
 
 const apiEndpoint = 'http://localhost:9002';
 
@@ -6,7 +6,6 @@ export default (route: string) => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     window
       .fetch(`${apiEndpoint}/${route}`)

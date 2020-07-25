@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useMemo } from 'react';
+import React, { FunctionComponent } from 'react';
 import useData from './hooks/useData';
 
 import PageError from './PageError';
@@ -18,7 +18,7 @@ const Categories: FunctionComponent<CategoriesType> = ({ category }) => {
     return <Loading />;
   }
 
-  return <div>{JSON.stringify(data)}</div>;
+  return <div> current render </div>;
 };
 
-export default Categories;
+export default React.memo(Categories);
