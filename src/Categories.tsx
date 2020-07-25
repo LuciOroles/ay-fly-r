@@ -3,6 +3,7 @@ import useData from './hooks/useData';
 
 import PageError from './PageError';
 import Loading from './Loading';
+import Subcategory from './Subcategory';
 
 type CategoriesType = {
   category: string;
@@ -17,8 +18,10 @@ const Categories: FunctionComponent<CategoriesType> = ({ category }) => {
   if (loading) {
     return <Loading />;
   }
-
-  return <div> current render </div>;
+  if (Array.isArray(data) && data !== null) {
+    return <Subcategory subcategory="cost" data={data} />;
+  }
+  return null;
 };
 
 export default React.memo(Categories);

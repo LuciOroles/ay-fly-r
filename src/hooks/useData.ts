@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 const apiEndpoint = 'http://localhost:9002';
 
 export default (route: string) => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]) as any[];
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
