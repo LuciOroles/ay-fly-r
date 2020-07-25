@@ -1,0 +1,42 @@
+{
+  "flights": [
+    {
+      "location": "Budapest",
+      "cost": 40,
+      "duration": 2.5,
+      "frequency": 3
+    },
+    {
+      "location": "Amsterdam",
+      "cost": 80,
+      "duration": 3.5,
+      "frequency": 6
+    },
+    {
+      "location": "Madrid",
+      "cost": 90,
+      "duration": 4,
+      "frequency": 4
+    }
+  ],
+  "weather": [
+    {
+      "location": "Budapest",
+      "temp-average": 22,
+      "humidity": 67,
+      "sun-hours": 11
+    },
+    {
+      "location": "Amsterdam",
+      "temp-average": 13,
+      "humidity": 77,
+      "sun-hours": 11.5
+    },
+    {
+      "location": "Madrid",
+      "temp-average": 28,
+      "humidity": 45,
+      "sun-hours": 14
+    }
+  ]
+}
