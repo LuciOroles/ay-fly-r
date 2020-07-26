@@ -14,7 +14,7 @@ export default (route: string) => {
         setLoading(false);
       })
       .catch(setError);
-  }, [route]);
+  }, [route, setData]);
 
   return {
     data,

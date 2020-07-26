@@ -3,7 +3,7 @@ import useData from './hooks/useData';
 
 import PageError from './PageError';
 import Loading from './Loading';
-import Subcategory from './Subcategory';
+import SubcategoryGraph from './SubcateogryGraph';
 
 type CategoriesType = {
   category: string;
@@ -19,7 +19,7 @@ const Categories: FunctionComponent<CategoriesType> = ({ category }) => {
     return <Loading />;
   }
   if (Array.isArray(data) && data !== null) {
-    return <Subcategory subcategory="cost" data={data} />;
+    return <SubcategoryGraph subcategory="cost" data={data} />;
   }
   return null;
 };
